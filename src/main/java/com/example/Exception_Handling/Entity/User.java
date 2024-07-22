@@ -3,22 +3,22 @@ package com.example.Exception_Handling.Entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "User")
+@Table(name = "UserData")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
+    @Column(name = "name")
     String name;
-    String bio;
-    int phoneno;
+    @Column(name = "address")
+    String address;
 
-    public User(int id, String name, String bio, int phoneno) {
+    public User(int id, String name, String address) {
         this.id = id;
         this.name = name;
-        this.bio = bio;
-        this.phoneno = phoneno;
+        this.address = address;
     }
 
     public User() {
@@ -40,19 +40,11 @@ public class User {
         this.name = name;
     }
 
-    public String getBio() {
-        return bio;
+    public String getAddress() {
+        return address;
     }
 
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
-
-    public int getPhoneno() {
-        return phoneno;
-    }
-
-    public void setPhoneno(int phoneno) {
-        this.phoneno = phoneno;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
