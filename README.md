@@ -22,7 +22,7 @@ This is a simple Spring Boot application for managing user data with exception h
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/KoushalKumar22/SpringBoot-User-Defined-Exception-Handling.git
    cd SpringBoot-User-Defined-Exception-Handling
 2. Build the project:
    ```sh
